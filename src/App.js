@@ -7,17 +7,17 @@ import LoginSignup from "./components/LoginSignup/LoginSignup";
 
 function App() {
   return (
-    // <BrowserRouter>
-    //         <Routes>
-    //             <Route path='./components/Login/Login' element={<Login />} />
-    //             <Route path='./components/Signup/Signup' element={<Signup />} />
-    //             {/* <Route path='/dashboard' element={<Dashboard />} />
-    //             <Route path='phone/verify' element={<PhoneVerify />} /> */}
-    //         </Routes>
-    //     </BrowserRouter>
-    <div>
-      <Login/>
-    </div>
+    <BrowserRouter>
+            <Routes>
+                <Route path='/' element={<Login />} />
+                <Route path='/Signup' element={<Signup />} />
+                {/* <Route path='/dashboard' element={<Dashboard />} />
+                <Route path='phone/verify' element={<PhoneVerify />} /> */}
+            </Routes>
+        </BrowserRouter>
+    // <div>
+    //   <Login/>
+    // </div>
   );
 }
 

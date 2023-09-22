@@ -23,7 +23,7 @@ export const Signup = () => {
         setUsername("");
         setPassword("");
     };
-    const gotoLoginPage = () => navigate("../Login/Login");
+    const gotoLoginPage = () => navigate("/");
   return (
     <div className='container'>
         <div className="header">
@@ -92,7 +92,7 @@ export const Signup = () => {
         
         <div className="submit-container">
             <div className="submit" onClick={handleSubmit}>Sign Up</div>
-            <div className="submit gray" onClick={()=>navigate("../Login/Login")}>Login</div>
+            <div className="submit gray" onClick={()=>navigate("/")}>Login</div>
         </div>
     </div>
   )

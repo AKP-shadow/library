@@ -18,7 +18,7 @@ export const Login = () => {
         setEmail("");
     };
 
-const gotoSignUpPage = () => navigate("../Signup/Signup");
+const gotoSignUpPage = () => navigate("/Signup");
   return (
     <div className='container'>
         <div className="header">
@@ -61,7 +61,7 @@ const gotoSignUpPage = () => navigate("../Signup/Signup");
         
         <div className="forgot-password">New User? <span>then Sign Up first!</span></div>
         <div className="submit-container">
-            <div className="submit gray" onClick={()=>navigate("../Signup/Signup")}>Sign Up</div>
+            <div className="submit gray" onClick={()=>navigate("/Signup")}>Sign Up</div>
             <div className="submit" onClick={handleSubmit}>Login</div>
         </div>
     </div>
